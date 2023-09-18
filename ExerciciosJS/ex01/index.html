@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>somar2n</title>
+</head>
+
+<body>
+    
+    <script>
+        function somarDoisNumeros() {
+    // Solicitar ao usuário o primeiro número
+    const numero1String = window.prompt("Digite o primeiro número:");
+
+    // Converter a entrada do usuário para um número inteiro
+    const numero1 = parseInt(numero1String);
+
+    // Solicitar ao usuário o segundo número
+    const numero2String = window.prompt("Digite o segundo número:");
+
+    // Converter a entrada do usuário para um número inteiro
+    const numero2 = parseInt(numero2String);
+
+    // Verificar se a conversão foi bem-sucedida (números válidos)
+    if (!isNaN(numero1) && !isNaN(numero2)) {
+        // Realizar a soma dos dois números
+        const resultado = numero1 + numero2;
+
+        // Exibir o resultado em um alerta
+        window.alert(`A soma de ${numero1} e ${numero2} é igual a ${resultado}`);
+    } else {
+        // Exibir uma mensagem de erro se a entrada não for um número válido
+        window.alert("Por favor, insira números válidos.");
+    }
+}
+
+// Chamar a função para iniciar o processo
+somarDoisNumeros();
+    </script>
+
+</body>
+
+</html>

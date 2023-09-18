@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>ex2</title>
+</head>
+
+<body>
+
+    <script>
+        function somarNumeros() {
+    const numeros = []; // Array para armazenar os números inseridos
+
+    while (true) {
+        const input = window.prompt("Digite um número ou 's' para parar:");
+
+        // Verificar se o usuário digitou 's' para parar
+        if (input.toLowerCase() === 's') {
+            break; // Sair do loop
+        }
+
+        // Converter a entrada do usuário para um número inteiro
+        const numero = parseInt(input);
+
+        // Verificar se a conversão foi bem-sucedida (número válido)
+        if (!isNaN(numero)) {
+            numeros.push(numero); // Adicionar o número ao array
+        } else {
+            window.alert("Entrada inválida. Por favor, insira um número válido.");
+        }
+    }
+
+    // Verificar se foram inseridos números suficientes para realizar a soma
+    if (numeros.length > 0) {
+        // Calcular a soma dos números no array usando a função reduce
+        const resultado = numeros.reduce((acumulador, numero) => acumulador + numero, 0);
+
+        // Exibir o resultado em um alerta
+        window.alert(`A soma dos números é igual a ${resultado}`);
+    } else {
+        window.alert("Nenhum número foi inserido.");
+    }
+}
+
+// Chamar a função para iniciar o processo
+somarNumeros();
+
+    </script>
+    
+</body>
+
+
+
+
+
+</html>
