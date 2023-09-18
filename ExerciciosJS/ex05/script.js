@@ -1,31 +1,33 @@
-document.addEventListener("load", function() {
-    const formularioCadastro = document.querySelector("loginForm");
 
-    formularioCadastro.addEventListener("submit", function(event) {
-        event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.getElementById("login-form");
 
-        const campoEmail = document.querySelector("#email");
-        const campoSenha = document.querySelector("#senha");
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede a ação padrão do formulário
 
-        const emailError = campoEmail.parentElement.querySelector(".error");
-        const senhaError = campoSenha.parentElement.querySelector(".error");
+        // Obtenha os valores dos campos
+        const email = document.getElementById("email").value;
+        const senha = document.getElementById("senha").value;
 
-        campoEmail.classList.remove("error-border");
-        campoSenha.classList.remove("error-border");
+        // Obtenha as mensagens de erro
+        const emailError = document.getElementById("email-error");
+        const senhaError = document.getElementById("senha-error");
 
-        emailError.innerHTML = "";
-        senhaError.innerHTML = "";
+        // Limpe as mensagens de erro e a formatação
+        emailError.textContent = "";
+        senhaError.textContent = "";
+        document.getElementById("email").classList.remove("error-border");
+        document.getElementById("senha").classList.remove("error-border");
 
-        if (campoEmail.value === "") {
-            campoEmail.classList.add("error-border");
-            emailError.innerHTML = "O campo E-mail deve ser preenchido.";
-            event.preventDefault();
+        // Validação dos campos em branco
+        if (email === "") {
+            emailError.textContent = "O campo E-mail deve ser preenchido.";
+            document.getElementById("email").classList.add("error-border");
         }
 
-        if (campoSenha.value === "") {
-            campoSenha.classList.add("error-border");
-            senhaError.innerHTML = "O campo Senha deve ser preenchido.";
-            event.preventDefault();
-        } 
+        if (senha === "") {
+            senhaError.textContent = "O campo Senha deve ser preenchido.";
+            document.getElementById("senha").classList.add("error-border");
+        }
     });
 });
