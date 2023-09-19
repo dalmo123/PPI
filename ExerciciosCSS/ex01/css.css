@@ -1,0 +1,39 @@
+.classeC {
+    width: 100px;
+    height: 100px;
+    border: 2px solid blueviolet;
+    float: left;
+    margin: 10px;
+}
+
+#div1 {
+    width: 25%;
+    height: 250px;
+    background-color: red;
+}
+
+#div2 {
+    margin-left: 20px;
+    width: 25%;
+    height: 150px;
+    background-color: orange;
+}
+
+#div3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 20px;
+    width: 45%;
+    height: 600px;
+    background-color: palegreen;
+}
+
+#div4 {
+    position: absolute;
+    top: 800px;
+    left: 300px;
+    background-color: brown;
+}
+
+....

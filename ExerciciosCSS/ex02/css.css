@@ -1,0 +1,36 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    background-color: blue;
+}
+
+.container {
+    background-color: pink;
+    width: 700px;
+    padding: 2px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.item{
+    background-color: black;
+    padding: 1rem;
+    border: 2px solid pink;
+    border-radius: 20px;
+    width: 75%;
+}
+
+img {
+    height: 150px;
+}
+
+p{
+    color: white;
+}
