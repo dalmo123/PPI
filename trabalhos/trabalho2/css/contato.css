@@ -1,0 +1,111 @@
+/*Seletor de tipo de elemento (1)*/
+body {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+    background-color: cornsilk;
+    font-size: small;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/*seletor de ID (2)*/
+#apresentacao {
+    display: flex;
+    justify-content: left;
+}
+
+#inicio {
+    color: green;
+}
+
+/*seletor de descendente (3)*/
+p a {
+    color: green;
+}
+
+/*seletor de classe (4)*/
+.foto {
+    display: flex;
+    justify-content: left;
+}
+
+.voltarPagina {
+    display: flex;
+    justify-content: left;
+    color: green;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid black;
+    margin: 20px 0;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.formulario {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.corpo {
+    border: none;
+    padding: 10px;
+}
+
+.nome {
+    font-size: 2.0rem;
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/*seletor de atributo(5)*/
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+button {
+    background-color: blue;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*pseudo classe(6)*/
+button:hover {
+    color: dodgerblue;
+    background-color: blue;
+}
+
+a:hover {
+    color: red;
+}

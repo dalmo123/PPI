@@ -1,0 +1,94 @@
+/*Seletor de tipo de elemento (1)*/
+body {
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+    background-color: cornsilk;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+/*seletor de classe (2)*/
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/*seletor de classe com seletor de descendente(3) */
+.menu li {
+    margin: 0 50px;
+}
+
+.menu a {
+    color: green;
+    text-decoration: none;
+}
+
+/*seletor de ID (4)*/
+#foto {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.foto img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.foto h1 {
+    margin: 10px 0;
+    color: green;
+    font-size: 6ch;
+}
+
+.foto hr {
+    width: 200%;
+    margin: 10px auto;
+    border: none;
+    border-top: 1px solid cornsilk;
+}
+
+.conteudoPrincipal {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    font-size: small;
+}
+
+/*pseudo-classe (5)*/
+a:hover {
+    color: red;
+}
+
+/* seletor de descendente sozinho*/
+body h2 {
+    color: green;
+}
+
+
+/*seletor de filho (6)*/
+p>a {
+    color: green;
+}
+
+.contato {
+    font-size: small;
+}

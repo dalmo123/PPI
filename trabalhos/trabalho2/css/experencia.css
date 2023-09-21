@@ -1,0 +1,65 @@
+/*seletor de tipo de elemento(1)*/
+body{
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+    background-color: cornsilk;
+    font-style: italic;
+    font-size: small;
+    line-height: 1.5;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+th, td {
+    border: 1px;
+    padding: 8px;
+    text-align: left;
+}
+
+/*seletor de descendente (2)*/
+tfoot td {
+    border-top: none;
+    text-align: center;
+}
+
+/*seletor de id (3)*/
+#titulo {
+    color: green;
+}
+
+/*seletor de irmao adjacente (3)*/
+tbody + tfoot {
+    background-color: cornsilk;
+}
+
+/*seletor de classe (4)*/
+.foto {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.foto img {
+    max-width: 100%;
+}
+
+/*seletor de pseudo classe (5)*/
+a:hover {
+    color: red;
+}
+
+/*seletor de filho (6)*/
+p > a {
+    color: green;
+}
+
+
+
+
